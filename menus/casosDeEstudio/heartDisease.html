@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Portafolio de Juan Lupi</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="../casosDeEstudio.html">Casos de Estudios</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../marcoTeorico.html">Marco Teórico</a></li>
+					<li><a href="../casosDeEstudio.html">Casos de estudio</a></li>
+					<li><a href="../algoritmos.html">Algoritmos</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>Heart Disease Data Set</h2>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+
+					<h3 class="major">Información General</h3>
+					<p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
+
+					<h3 class="major">Objetivo</h3>
+					<p>El objetivo es predecir si una persona puede sufrir de una enfermedad cardíaca.</p>
+
+					<h3 class="major">Tipo de problema</h3>
+					<p>Se trata de un problema de Clasificación.</p>
+
+					<h3 class="major">Atributos</h3>
+					<p>De los 76 atributos que contiene la base de datos, en los experimentos realizados solamente se ha
+						utilizado una subconjunto de 14 de estos.
+					</p>
+					<table>
+						<tr>
+							<th>Nombre del atributo</th>
+							<th>Tipo</th>
+							<th>Descripción</th>
+							<th>Unidad</th>
+							<th>Role</th>
+						</tr>
+						<tr>
+							<td>age</td>
+							<td>Integer</td>
+							<td>Edad en años</td>
+							<td>Años</td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>sex</td>
+							<td>Categorical</td>
+							<td>Sexo representado en valores binarios</td>
+							<td>(1 = masculino; 0 = femenino)</td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>cp</td>
+							<td>Categorical</td>
+							<td>Tipo de dolor en el pecho</td>
+							<td>
+								<ul>
+									<li>Valor 1: angina típica</li>
+									<li>Valor 2: angina atípica</li>
+									<li>Valor 3: dolor no anginal</li>
+									<li>Valor 4: asintomático</li>
+								</ul>
+							</td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>trestbps</td>
+							<td>Integer</td>
+							<td>Presión arterial en reposo (al ingreso al hospital)</td>
+							<td>mm Hg</td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>chol</td>
+							<td>Integer</td>
+							<td>Colesterol en suero</td>
+							<td>mg/dl</td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>fbs</td>
+							<td>Categorical</td>
+							<td>Azúcar en sangre en ayunas > 120 mg/dl</td>
+							<td></td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>restecg</td>
+							<td>Categorical</td>
+							<td>Resultados electrocardiográficos en reposo</td>
+							<td>
+								<ul>
+									<li>Valor 0: normal</li>
+									<li>Valor 1: anormalidad de la onda ST-T (inversiones de la onda T y/o elevación o
+										depresión de ST > 0.05 mV)</li>
+									<li>Valor 2: hipertrofia ventricular izquierda probable o definitiva según los
+										criterios de Estes</li>
+								</ul>
+							</td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>thalac</td>
+							<td>Integer</td>
+							<td>Ritmo cardíaco máximo alcanzado</td>
+							<td></td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>exang</td>
+							<td>Categorical</td>
+							<td>Angina inducida por ejercicio</td>
+							<td>(1 = sí; 0 = no)</td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>oldpeak</td>
+							<td>Integer</td>
+							<td>Depresión del segmento ST inducida por ejercicio en relación con el reposo</td>
+							<td></td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>slope</td>
+							<td>Categorical</td>
+							<td>Pendiente del segmento ST de ejercicio máximo</td>
+							<td>
+								<ul>
+									<li>Valor 1: ascendente</li>
+									<li>Valor 2: plano</li>
+									<li>Valor 3: descendente</li>
+								</ul>
+							</td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>ca</td>
+							<td>Integer</td>
+							<td>Número de vasos principales (0-3) coloreados por fluoroscopia</td>
+							<td></td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>thal</td>
+							<td>Categorical</td>
+							<td>3 = normal; 6 = defecto fijo; 7 = defecto reversible</td>
+							<td></td>
+							<td>Feature</td>
+						</tr>
+						<tr>
+							<td>num</td>
+							<td>Integer</td>
+							<td>Diagnóstico de enfermedad cardíaca</td>
+							<td>
+								<ul>
+									<li>Valor 0: estrechamiento del diámetro < 50%</li>
+									<li>Valor 1: estrechamiento del diámetro > 50%</li>
+									(en cualquier vaso principal: los atributos 59 a 68 son vasos)</li>
+								</ul>
+							</td>
+							<td>Target</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../../assets/js/browser.min.js"></script>
+	<script src="../../assets/js/breakpoints.min.js"></script>
+	<script src="../../assets/js/util.js"></script>
+	<script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>
