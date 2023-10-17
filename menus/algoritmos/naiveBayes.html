@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Portafolio de Juan Lupi</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="../algoritmos.html">Algoritmos</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../marcoTeorico.html">Marco Teórico</a></li>
+					<li><a href="../casosDeEstudio.html">Casos de estudio</a></li>
+					<li><a href="../algoritmos.html">Algoritmos</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>Naive Bayes</h2>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+
+					<h3 class="major">¿Qué es Naive Bayes?</h3>
+					<p>Naive Bayes es un algoritmo de aprendizaje automático ampliamente utilizado para tareas de
+						clasificación y análisis de texto. Su enfoque se basa en el teorema de Bayes, que es un
+						principio fundamental en estadísticas y probabilidad.</p>
+
+					<h4>Principio de Naive Bayes</h4>
+					<p>El enfoque "naive" en Naive Bayes proviene de una suposición simplificada: asume que todas las
+						características utilizadas para la clasificación son independientes entre sí. A pesar de esta
+						suposición simplificada, Naive Bayes ha demostrado ser efectivo en una amplia gama de
+						aplicaciones, especialmente en la clasificación de documentos y análisis de sentimientos.</p>
+
+					<h4>Clasificación Probabilística</h4>
+					<p>La principal fortaleza de Naive Bayes radica en su enfoque probabilístico. El algoritmo calcula
+						la probabilidad de que un punto de datos dado pertenezca a una clase particular. Utiliza el
+						teorema de Bayes para calcular esta probabilidad mediante la siguiente fórmula:</p>
+
+					<pre>
+    P(Clase | Características) = (P(Clase) * P(Características | Clase)) / P(Características)
+    </pre>
+
+					<h4>Aplicaciones de Naive Bayes</h4>
+					<p>Naive Bayes se utiliza en una variedad de aplicaciones, incluyendo la clasificación de correo
+						electrónico como spam o no spam, análisis de sentimientos en redes sociales, diagnóstico médico,
+						y más. Su simplicidad y velocidad de cálculo lo hacen ideal para problemas de clasificación
+						donde se pueden hacer suposiciones simplificadas acerca de la independencia de las
+						características.</p>
+
+					<p>En resumen, Naive Bayes es una técnica poderosa que se basa en el teorema de Bayes para realizar
+						clasificación probabilística. A pesar de su suposición "naive" de independencia de
+						características, ha demostrado ser efectivo en una amplia gama de aplicaciones y es una
+						herramienta valiosa en el aprendizaje automático y la minería de datos.</p>
+
+					<h4>Análisis Detallado de Naive Bayes</h4>
+
+					<p>El algoritmo Naive Bayes es una técnica de clasificación que se basa en la probabilidad y el
+						teorema de Bayes. Aunque su suposición "naive" de independencia entre las características puede
+						no ser siempre cierta en la práctica, este enfoque sigue siendo sorprendentemente efectivo en
+						una variedad de aplicaciones. A continuación, profundizaremos en los aspectos clave del
+						algoritmo:</p>
+
+					<h4>Teorema de Bayes</h4>
+
+					<p>El teorema de Bayes, desarrollado por el matemático y estadístico Thomas Bayes, es fundamental en
+						el enfoque de Naive Bayes. Se utiliza para calcular la probabilidad de que un punto de datos
+						pertenezca a una clase particular, dadas sus características observadas. La fórmula general del
+						teorema de Bayes es la siguiente:</p>
+
+					<pre>
+P(Clase | Características) = (P(Clase) * P(Características | Clase)) / P(Características)
+</pre>
+
+					<p>Donde:</p>
+
+					<ul>
+						<li><strong>P(Clase | Características)</strong>: La probabilidad condicional de que el punto de
+							datos pertenezca a una clase dada, dado un conjunto de características.</li>
+						<li><strong>P(Clase)</strong>: La probabilidad a priori de la clase.</li>
+						<li><strong>P(Características | Clase)</strong>: La probabilidad condicional de que las
+							características se observen dada la clase.</li>
+						<li><strong>P(Características)</strong>: La probabilidad de que se observen las características
+							en general.</li>
+					</ul>
+
+					<h4>Suposición de Independencia</h4>
+
+					<p>El término "naive" en Naive Bayes proviene de la suposición simplificada de que todas las
+						características utilizadas para la clasificación son independientes entre sí. Esto significa que
+						el valor de una característica no depende del valor de otra. A pesar de esta suposición, Naive
+						Bayes sigue siendo eficaz en muchas situaciones, especialmente en tareas de clasificación de
+						texto, como la detección de spam o el análisis de sentimientos.</p>
+
+					<h4>Aplicaciones Comunes</h4>
+
+					<p>Naive Bayes se utiliza en una variedad de aplicaciones, incluyendo:</p>
+
+					<ul>
+						<li><strong>Clasificación de Correo Electrónico:</strong> Naive Bayes es ampliamente utilizado
+							para clasificar correos electrónicos como spam o no spam en sistemas de filtrado de correo.
+						</li>
+						<li><strong>Análisis de Sentimientos:</strong> En las redes sociales y las revisiones de
+							productos, Naive Bayes puede determinar el sentimiento positivo o negativo de un texto.</li>
+						<li><strong>Diagnóstico Médico:</strong> Se aplica en el diagnóstico de enfermedades basado en
+							síntomas y datos médicos.</li>
+						<li><strong>Clasificación de Documentos:</strong> Para organizar documentos en categorías, como
+							noticias, deportes, tecnología, etc.</li>
+					</ul>
+
+					<p>En resumen, Naive Bayes es un algoritmo versátil que se basa en principios probabilísticos y de
+						probabilidad condicional. A pesar de su suposición simplificada de independencia de
+						características, su eficacia en tareas de clasificación lo convierte en una herramienta valiosa
+						en Machine Learning y minería de datos.</p>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../../assets/js/browser.min.js"></script>
+	<script src="../../assets/js/breakpoints.min.js"></script>
+	<script src="../../assets/js/util.js"></script>
+	<script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>

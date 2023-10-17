@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Portafolio de Juan Lupi</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="../algoritmos.html">Algoritmos</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../marcoTeorico.html">Marco Teórico</a></li>
+					<li><a href="../casosDeEstudio.html">Casos de estudio</a></li>
+					<li><a href="../algoritmos.html">Algoritmos</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>Regresión Lineal</h2>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+
+					<h3 class="major">¿Qué es Descenso de Gradiente?</h3>
+					<p>El Descenso de Gradiente es una técnica fundamental en Machine Learning utilizada para optimizar
+						funciones de costo y entrenar modelos. Su objetivo es encontrar los valores de los parámetros de
+						un modelo que minimizan la función de costo, lo que permite que el modelo haga predicciones
+						precisas.</p>
+
+					<h4>Proceso del Descenso de Gradiente</h4>
+					<ol>
+						<li><strong>Inicialización:</strong> Se comienza con valores iniciales para los parámetros del
+							modelo.</li>
+						<li><strong>Cálculo del Gradiente:</strong> Se calcula el gradiente de la función de costo con
+							respecto a los parámetros. El gradiente indica la dirección y la magnitud del cambio
+							necesario.</li>
+						<li><strong>Actualización de Parámetros:</strong> Los parámetros se actualizan en la dirección
+							opuesta al gradiente multiplicado por una tasa de aprendizaje. Esto ajusta los parámetros
+							para reducir la función de costo.</li>
+						<li><strong>Convergencia:</strong> Se repiten los pasos 2 y 3 hasta que se alcance la
+							convergencia, es decir, cuando la función de costo se minimiza o deja de cambiar
+							significativamente.</li>
+					</ol>
+
+					<h4>Tasa de Aprendizaje</h4>
+					<p>La tasa de aprendizaje es un hiperparámetro crítico en el Descenso de Gradiente. Controla el
+						tamaño de los pasos de actualización de parámetros. Una tasa de aprendizaje demasiado alta puede
+						hacer que el algoritmo diverja, mientras que una tasa de aprendizaje muy baja puede hacer que la
+						convergencia sea lenta.</p>
+
+					<h4>Variantes del Descenso de Gradiente</h4>
+					<ul>
+						<li><strong>Descenso de Gradiente Estocástico (SGD):</strong> En lugar de utilizar todo el
+							conjunto de datos en cada iteración, SGD utiliza un solo ejemplo de entrenamiento aleatorio
+							a la vez. Esto puede acelerar la convergencia, pero la variabilidad en las actualizaciones
+							puede dificultar la convergencia a una solución óptima.</li>
+						<li><strong>Descenso de Gradiente por Lotes:</strong> Utiliza un pequeño conjunto de datos
+							(lote) en cada iteración. Combina las ventajas de SGD y el Descenso de Gradiente completo,
+							pero puede ser más lento en conjuntos de datos grandes.</li>
+						<li><strong>Descenso de Gradiente Miniatura:</strong> Es una variante intermedia que utiliza
+							lotes de un tamaño intermedio. Combina eficiencia y estabilidad en la convergencia.</li>
+					</ul>
+
+					<h4>Aplicaciones del Descenso de Gradiente</h4>
+					<p>El Descenso de Gradiente se utiliza en una amplia variedad de algoritmos de Machine Learning,
+						incluyendo regresión lineal, regresión logística, redes neuronales y algoritmos de
+						clasificación. Es esencial para entrenar modelos y ajustar sus parámetros de manera efectiva.
+					</p>
+
+					<p>Comprender el Descenso de Gradiente es fundamental para cualquier profesional en Machine
+						Learning, ya que es la base de la optimización de modelos y el logro de un rendimiento óptimo en
+						aplicaciones del mundo real.</p>
+</body>
+</div>
+
+</section>
+
+</div>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>

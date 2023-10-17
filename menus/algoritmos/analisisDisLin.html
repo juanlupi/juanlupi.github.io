@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Portafolio de Juan Lupi</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="../algoritmos.html">Algoritmos</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../marcoTeorico.html">Marco Teórico</a></li>
+					<li><a href="../casosDeEstudio.html">Casos de estudio</a></li>
+					<li><a href="../algoritmos.html">Algoritmos</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>Análisis Discriminante Lineal</h2>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+
+					<h3 class="major">¿Qué es Análisis Discriminante Lineal?</h3>
+					<p>El Análisis Discriminante Lineal (LDA, por sus siglas en inglés) es una técnica de Machine
+						Learning utilizada para la clasificación y reducción de dimensiones. Su objetivo principal es
+						encontrar una combinación lineal de características que maximice la separación entre clases en
+						un conjunto de datos.</p>
+
+					<h4>Características Clave del LDA</h4>
+					<ul>
+						<li><strong>Clasificación</strong> LDA se utiliza comúnmente para la clasificación de patrones.
+							Puede predecir a qué clase pertenece un punto de datos desconocido en función de la
+							distribución de clases en el espacio de características.</li>
+						<li><strong>Reducción de Dimensiones:</strong> Además de la clasificación, LDA se utiliza para
+							reducir la dimensionalidad de los datos al proyectarlos en un espacio de menor dimensión
+							mientras se conserva la información discriminante.</li>
+						<li><strong>Maximización de la Variabilidad Interclase e Intracase:</strong> LDA busca maximizar
+							la variabilidad entre las clases y minimizar la variabilidad dentro de las clases en el
+							espacio de características transformado.</li>
+					</ul>
+
+					<h4>Proceso del Análisis Discriminante Lineal</h4>
+					<ol>
+						<li><strong>Cálculo de Medias y Dispersiones</strong> Se calculan las medias y las matrices de
+							dispersión (intraclase e interclase) en el espacio de características original.</li>
+						<li><strong>Obtención de los Autovectores y Autovalores:</strong> Se calculan los autovectores y
+							autovalores de la matriz resultante de la inversa de la matriz de dispersión intraclase
+							multiplicada por la matriz de dispersión interclase.</li>
+						<li><strong>Selección de Características:</strong> Los autovectores con los autovalores más
+							grandes se seleccionan como nuevas características para la proyección de datos.</li>
+						<li><strong>Clasificación o Proyección de Datos:</strong> Los datos se proyectan en el espacio
+							de características transformado y se utilizan para clasificación o reducción de dimensiones.
+						</li>
+					</ol>
+
+					<h4>Aplicaciones del Análisis Discriminante Lineal</h4>
+					<p>El LDA se aplica en diversas áreas, incluyendo reconocimiento facial, procesamiento de imágenes,
+						biometría y análisis de datos biomédicos. También es valioso en situaciones en las que se
+						requiere clasificación precisa y reducción de dimensionalidad, como en el reconocimiento de
+						patrones y la toma de decisiones basada en datos.</p>
+
+					<p>Comprender el Análisis Discriminante Lineal es esencial para aquellos que trabajan en problemas
+						de clasificación y reducción de dimensiones en Machine Learning.</p>
+
+					<h4>Uso del Análisis Discriminante Lineal</h4>
+					<p>El Análisis Discriminante Lineal se utiliza en una variedad de aplicaciones, como la detección de
+						spam en correos electrónicos, el diagnóstico médico, la clasificación de documentos y la
+						identificación de objetos en visión por computadora. En medicina, por ejemplo, se puede utilizar
+						para diferenciar entre pacientes sanos y enfermos en función de múltiples características
+						médicas.</p>
+					<h4>Comparación con Análisis de Componentes Principales (PCA)</h4>
+					<p>Es importante distinguir el LDA del Análisis de Componentes Principales (PCA). Ambos se utilizan
+						para reducir la dimensionalidad de los datos, pero con objetivos diferentes. Mientras que el PCA
+						busca maximizar la variabilidad total en los datos, el LDA busca maximizar la separación entre
+						clases, lo que lo hace especialmente útil para problemas de clasificación.</p>
+					<h4>Supuestos del Análisis Discriminante Lineal</h4>
+					<p>El LDA asume que los datos siguen una distribución normal multivariada y que las matrices de
+						covarianza de las clases son iguales. Si estos supuestos no se cumplen, la eficacia del LDA
+						puede verse comprometida. En tales casos, otras técnicas, como el Análisis Discriminante
+						Cuadrático (QDA) o métodos basados en máquinas de soporte vectorial, pueden ser más apropiados.
+					</p>
+					<h4>Selección de Características en LDA</h4>
+					<p>En el proceso de LDA, se eligen las características que mejor separan las clases. Esto significa
+						que no todas las características originales se utilizan en el espacio de características
+						transformado. La selección de características es automática y se basa en la información
+						discriminante contenida en las características.</p>
+					<h4>Evaluación de Modelos LDA</h4>
+					<p>Para evaluar la eficacia de un modelo LDA, se utilizan métricas como la precisión, la
+						sensibilidad y la especificidad en problemas de clasificación binaria. En problemas de
+						clasificación multiclase, se pueden usar métricas como la matriz de confusión y la precisión
+						global.</p>
+					<h4>Implementación en Herramientas de Machine Learning</h4>
+					<p>El LDA está disponible en varias bibliotecas y herramientas de Machine Learning, como
+						scikit-learn en Python y el software de minería de datos RapidMiner. Estas herramientas
+						facilitan la implementación y el ajuste de modelos LDA en conjuntos de datos reales.</p>
+					<h4>Importancia en la Toma de Decisiones</h4>
+					<p>El LDA desempeña un papel crucial en la toma de decisiones basada en datos. Al identificar
+						características discriminantes, ayuda a las organizaciones y profesionales a tomar decisiones
+						informadas en una variedad de campos, desde la salud y la seguridad hasta la detección de
+						fraudes y la segmentación de mercado.</p>
+					El Análisis Discriminante Lineal es una herramienta poderosa en Machine Learning, y su comprensión
+					es esencial para aprovechar al máximo su potencial en la clasificación y reducción de dimensiones.
+
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../../assets/js/browser.min.js"></script>
+	<script src="../../assets/js/breakpoints.min.js"></script>
+	<script src="../../assets/js/util.js"></script>
+	<script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>

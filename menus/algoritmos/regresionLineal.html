@@ -56,8 +56,129 @@
 				<div class="inner">
 
 					<h3 class="major">¿Qué es Regresión Lineal?</h3>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					<p>La regresión lineal es un método de análisis estadístico que se utiliza en el campo del
+						aprendizaje automático y la estadística para modelar la relación entre una variable dependiente
+						(o respuesta) y una o más variables independientes (o predictoras). El objetivo principal de la
+						regresión lineal es encontrar una función lineal que describa la relación entre las variables de
+						manera óptima.
 					</p>
+					<h4>Conceptos clave de la regresión lineal</h4>
+					<p>
+						<strong>Variable Dependiente (Y)</strong>
+						<br>La variable que deseamos predecir o explicar. En el contexto de la
+						regresión, esta variable se denomina "variable dependiente" y se representa como Y. Por ejemplo,
+						en un problema de predicción de precios de viviendas, el precio de la vivienda sería la variable
+						dependiente.
+						<br>
+						<strong>Variables Independientes (X)</strong>
+						<br>Son las variables que utilizamos para predecir o explicar la
+						variable dependiente. Se pueden representar como X1, X2, X3, etc. En el contexto de la regresión
+						lineal, estas variables a menudo se denominan "predictores" o "características". Por ejemplo, en
+						el caso de la predicción de precios de viviendas, las características podrían ser el tamaño de
+						la vivienda, el número de habitaciones, la ubicación, etc.
+						<br>
+						<strong>Modelo Lineal</strong>
+						<br>La regresión lineal asume que existe una relación lineal entre las variables
+						independientes y la variable dependiente. El modelo lineal se representa de la siguiente manera:
+						Y = β0 + β1X1 + β2X2 + ... + βn*Xn, donde β0, β1, β2, ..., βn son los coeficientes del modelo
+						que se deben estimar.
+						<br>
+						<strong>Estimación de Coeficientes</strong>
+						<br>El proceso de ajuste de la regresión lineal implica estimar los
+						coeficientes β0, β1, β2, ..., βn de manera que el modelo se ajuste mejor a los datos observados.
+						Esto se logra utilizando técnicas como el método de mínimos cuadrados, que busca minimizar la
+						suma de los cuadrados de las diferencias entre las predicciones del modelo y los valores reales.
+						<br>
+						<strong>Predicciones</strong>
+						<br>Una vez que se han estimado los coeficientes del modelo, se pueden hacer
+						predicciones sobre nuevos datos utilizando la ecuación del modelo lineal. Estas predicciones
+						proporcionan valores estimados para la variable dependiente en función de los valores de las
+						variables independientes.
+						<br>
+						<strong>Evaluación del Modelo</strong>
+						<br>Para evaluar la calidad del modelo de regresión lineal, se utilizan
+						diversas métricas, como el error cuadrático medio (RMSE), el coeficiente de determinación (R
+						cuadrado) y otros, dependiendo de la naturaleza del problema. Estas métricas ayudan a determinar
+						cuán bien se ajusta el modelo a los datos y cuán precisas son sus predicciones.
+						<br>
+						<strong>Suposiciones</strong>
+						<br>La regresión lineal se basa en varias suposiciones, como la linealidad, la
+						independencia de errores, la normalidad de los residuos y la homocedasticidad. Estas
+						suposiciones deben verificarse antes de utilizar un modelo de regresión lineal.
+						<br><br>
+						La regresión lineal es una de las técnicas más simples y ampliamente utilizadas en el
+						aprendizaje automático y la estadística, y se aplica en una variedad de dominios para predecir
+						valores numéricos a partir de datos observados. La elección de la regresión lineal se basa en la
+						naturaleza de la relación entre las variables y la interpretación de los coeficientes del
+						modelo.
+					</p>
+					<h4>Tipos de Regresión Lineal</h4>
+					<ol>
+						<li><strong>Regresión Lineal Simple:</strong> Se utiliza cuando hay una única variable
+							independiente que se relaciona con la variable dependiente. El modelo es de la forma Y = β0
+							+ β1*X, donde β0 es la ordenada al origen y β1 es la pendiente de la línea.</li>
+						<li><strong>Regresión Lineal Múltiple:</strong> Se aplica cuando hay múltiples variables
+							independientes que influyen en la variable dependiente. El modelo se extiende a Y = β0 +
+							β1*X1 + β2*X2 + ... + βn*Xn, donde cada β representa el efecto de una variable
+							independiente.</li>
+					</ol>
+
+					<h4>Uso de la Regresión Lineal</h4>
+					<ul>
+						<li><strong>Predicción:</strong> La regresión lineal se utiliza comúnmente para predecir valores
+							futuros. Por ejemplo, en finanzas, se puede predecir el precio de las acciones en función de
+							factores como el volumen de operaciones, las tasas de interés y los informes económicos.
+						</li>
+						<li><strong>Análisis de Causa y Efecto:</strong> La regresión lineal ayuda a comprender las
+							relaciones entre variables. Puede identificar cuáles de las variables independientes tienen
+							un impacto significativo en la variable dependiente.</li>
+						<li><strong>Control de Calidad:</strong> En la fabricación, la regresión lineal se utiliza para
+							evaluar la relación entre las variables de proceso y la calidad del producto. Esto permite
+							realizar ajustes para mejorar la calidad.</li>
+						<li><strong>Investigación Social y Científica:</strong> Los investigadores utilizan la regresión
+							lineal para analizar datos y determinar si existen relaciones significativas entre las
+							variables de estudio.</li>
+					</ul>
+
+					<h4>Suposiciones de la Regresión Lineal</h4>
+					<ul>
+						<li><strong>Linealidad:</strong> Se asume que la relación entre las variables es lineal, lo que
+							significa que los cambios en las variables independientes se traducen en cambios
+							proporcionales en la variable dependiente.</li>
+						<li><strong>Independencia de Errores:</strong> Los errores en las predicciones del modelo deben
+							ser independientes entre sí. No debe haber patrones o autocorrelación en los errores.</li>
+						<li><strong>Normalidad de Errores:</strong> Se supone que los errores siguen una distribución
+							normal. Esto es importante para la interpretación de los intervalos de confianza y las
+							pruebas de hipótesis.</li>
+						<li><strong>Homocedasticidad:</strong> La varianza de los errores debe ser constante a lo largo
+							de todos los niveles de las variables independientes. No debe haber una tendencia creciente
+							o decreciente en la dispersión de los errores.</li>
+					</ul>
+
+					<h4>Evaluación del Modelo de Regresión Lineal</h4>
+					<ul>
+						<li><strong>Coeficiente de Determinación (R cuadrado):</strong> Indica cuánta variabilidad en la
+							variable dependiente se explica por el modelo. Valores más cercanos a 1 son deseables.</li>
+						<li><strong>Error Cuadrático Medio (RMSE):</strong> Mide la diferencia entre las predicciones
+							del modelo y los valores reales. Un RMSE más bajo indica un mejor ajuste del modelo.</li>
+						<li><strong>Pruebas de Hipótesis:</strong> Se utilizan para evaluar si los coeficientes son
+							significativamente diferentes de cero. Esto ayuda a determinar cuáles variables
+							independientes son importantes.</li>
+					</ul>
+
+					<h4>Limitaciones de la Regresión Lineal</h4>
+					<ul>
+						<li>La regresión lineal asume una relación lineal entre las variables, lo que puede no ser
+							válido en todos los casos.</li>
+						<li>Puede ser sensible a valores atípicos o datos anómalos.</li>
+						<li>No es adecuada para modelar relaciones no lineales, para las cuales se utilizan otros tipos
+							de regresión, como la regresión polinómica o la regresión logística.</li>
+					</ul>
+
+					<p>La regresión lineal es una herramienta fundamental en el análisis de datos y el aprendizaje
+						automático, que se utiliza en una amplia gama de aplicaciones para comprender y predecir
+						relaciones entre variables. Es esencial comprender sus suposiciones, evaluar su rendimiento y
+						aplicarlo de manera adecuada a cada problema.</p>
 				</div>
 			</div>
 
