@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Portafolio de Juan Lupi</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="../algoritmos.html">Algoritmos</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../marcoTeorico.html">Marco Teórico</a></li>
+					<li><a href="../casosDeEstudio.html">Casos de estudio</a></li>
+					<li><a href="../algoritmos.html">Algoritmos</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2> K-NN</h2>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+
+					<h3 class="major">¿Qué es K-NN?</h3>
+					<p>El algoritmo de K-Vecinos más Cercanos (KNN) es una técnica popular en el campo del aprendizaje
+						automático y la estadística que se utiliza para abordar problemas de clasificación y regresión.
+						KNN es un algoritmo de aprendizaje supervisado que se basa en la idea de que los puntos de datos
+						que son similares en su espacio de características tienden a pertenecer a la misma categoría.
+					</p>
+
+					<p>El funcionamiento de KNN es bastante sencillo. Cuando se le presenta un nuevo punto de datos que
+						se necesita clasificar, KNN busca los "K" puntos de datos más cercanos en el conjunto de
+						entrenamiento. La cercanía se mide utilizando una métrica, como la distancia euclidiana, y estos
+						puntos de entrenamiento más cercanos votan para determinar la clase del nuevo punto de datos.
+						Por ejemplo, si K = 3 y dos de los puntos más cercanos pertenecen a la clase A y uno a la clase
+						B, el nuevo punto se clasificará como perteneciente a la clase A.</p>
+
+					<p>KNN es un algoritmo versátil y fácil de entender. No requiere una fase de entrenamiento costosa,
+						ya que simplemente almacena el conjunto de datos de entrenamiento en memoria. Sin embargo, la
+						elección de un valor adecuado para K es crítica, ya que puede afectar la precisión del
+						algoritmo.</p>
+
+					<p>En esta introducción, exploraremos cómo funciona KNN, cómo seleccionar un valor apropiado para K,
+						y cómo se aplica en problemas de clasificación y regresión. KNN es ampliamente utilizado en
+						diversas aplicaciones, como recomendación de películas, reconocimiento de escritura a mano,
+						clasificación de spam y mucho más. Su simplicidad y capacidad para manejar conjuntos de datos no
+						lineales lo hacen una herramienta valiosa en el campo del aprendizaje automático.</p>
+
+					<h4>Funcionamiento de K-Vecinos más Cercanos</h4>
+					<p>El funcionamiento de K-Vecinos más Cercanos se basa en el concepto de proximidad. Cuando se
+						necesita clasificar un nuevo punto de datos, KNN calcula la distancia entre ese punto y todos
+						los puntos de entrenamiento. Luego, selecciona los "K" puntos más cercanos, donde "K" es un
+						valor que el usuario debe especificar.</p>
+
+					<p>Una vez que se han identificado los "K" vecinos más cercanos, KNN utiliza sus etiquetas para
+						determinar la clase del nuevo punto. Por lo general, se realiza una votación, y la clase con más
+						votos entre los vecinos más cercanos se asigna al nuevo punto. Esto se conoce como clasificación
+						por mayoría. Por ejemplo, si la mayoría de los "K" vecinos más cercanos son de la clase "A", el
+						nuevo punto se clasificará como "A".</p>
+
+					<h4>Selección de un Valor Adecuado para K</h4>
+					<p>La elección de un valor adecuado para K es una decisión crucial al utilizar KNN. Un valor de K
+						demasiado pequeño puede hacer que el algoritmo sea sensible al ruido en los datos, mientras que
+						un valor de K demasiado grande puede suavizar las fronteras de decisión y dar como resultado un
+						modelo menos preciso. La elección de K a menudo se basa en la naturaleza del problema y en
+						experimentación.</p>
+
+					<h4>Aplicaciones de KNN</h4>
+					<p>KNN se utiliza en una variedad de aplicaciones, desde sistemas de recomendación hasta diagnóstico
+						médico. Algunos ejemplos comunes incluyen la recomendación de películas según el historial de
+						visualización, la detección de spam en correos electrónicos, la clasificación de noticias y
+						mucho más.</p>
+
+					<p>KNN es especialmente útil cuando se trata de problemas de clasificación en los que la estructura
+						de los datos es compleja y no lineal. Además, es un algoritmo que se beneficia de tener un
+						conjunto de datos de entrenamiento grande y diverso.</p>
+
+					<p>En resumen, K-Vecinos más Cercanos es una técnica versátil y fácil de entender que se utiliza
+						para clasificar datos en función de la proximidad con otros puntos de datos. Es una de las
+						muchas herramientas disponibles en el campo del aprendizaje automático y la inteligencia
+						artificial, y su elección depende de la naturaleza del problema que se desea abordar.</p>
+
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../../assets/js/browser.min.js"></script>
+	<script src="../../assets/js/breakpoints.min.js"></script>
+	<script src="../../assets/js/util.js"></script>
+	<script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>

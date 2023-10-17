@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Portafolio de Juan Lupi</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="../casosDeEstudio.html">Casos de Estudios</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../marcoTeorico.html">Marco Teórico</a></li>
+					<li><a href="../casosDeEstudio.html">Casos de estudio</a></li>
+					<li><a href="../algoritmos.html">Algoritmos</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>Wine Data Set</h2>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+
+					<h3 class="major">Información General</h3>
+					<p> En este análisis, abordaremos el desafiante problema de la clasificación de vinos en dos
+						categorías distintas: "rojo" y "blanco". Este conjunto de datos, conocido como el "Wine
+						Dataset," nos presenta una interesante tarea de clasificación binaria que involucra una variedad
+						de atributos químicos y físicos medidos en diferentes vinos.
+						<br>
+						El objetivo principal de este estudio es desarrollar modelos de Machine Learning capaces de
+						identificar con precisión el tipo de vino (rojo o blanco) en función de estas características.
+						Para lograrlo, exploraremos el conjunto de datos, realizaremos un análisis exhaustivo de sus
+						atributos y estructura, y aplicaremos técnicas de clasificación para construir modelos
+						predictivos.
+						<br>
+						Este problema no solo pone a prueba nuestras habilidades en la construcción de modelos de
+						clasificación, sino que también demuestra la utilidad de la ciencia de datos y el Machine
+						Learning en la industria vitivinícola, donde la identificación precisa del tipo de vino puede
+						ser crucial para la calidad y la toma de decisiones. Acompáñanos en este viaje de análisis y
+						clasificación de vinos para desvelar los secretos detrás de cada botella.
+					</p>
+
+					<h3 class="major">Tipo de problema</h3>
+					<p>Se trata de un problema de clasificación binaria supervisada. El objetivo es predecir el tipo de
+						vino (rojo o blanco) en función de sus características.</p>
+
+					<h3 class="major">Atributos</h3>
+					<p>Realizar un análisis de los atributos es de vital importancia por varias razones. En primer
+						lugar, permite comprender mejor la naturaleza de los datos y comprender a fondo la estructura y
+						el contenido de los mismos.
+						Esto incluye conocer la naturaleza de las variables, su distribución, relaciones entre atributos
+						y la presencia de valores atípicos o datos faltantes. Este conocimiento es esencial para tomar
+						decisiones informadas y
+						seleccionar las técnicas de análisis adecuadas.
+						<br>
+						En segundo lugar, es fundamental para identificar patrones y tendenncias que se puedan encontrar
+						en los datos. Esto puede revelar información valiosa que ayuda en la toma de decisiones y en la
+						generación de conocimientos.
+						<br>
+						Este análisis permite limpiar y preprocesar los datos, abordar valores atípicos, datos faltantes
+						y problemas de calidad de datos. La preparación adecuada de datos es esencial para el
+						rendimiento de los modelos de Machine Learning.
+						<br>
+						A través del análisis de datos, se pueden identificar los atributos más relevantes para el
+						problema. Esto simplifica los modelos, mejora su interpretación y puede aumentar su precisión.
+					</p>
+					<p>
+						El conjunto de datos de clasificación de vinos ("Wine Dataset") contiene varios atributos que
+						describen características químicas y físicas de las muestras de vino. A continuación, realizo un
+						análisis de estos atributos:
+					<ul>
+						<li>
+							Fixed Acidity (Acidez Fija)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Representa la cantidad de ácido tartárico en el vino. Es una medida de la
+							acidez del vino.
+						</li>
+						<li>
+							Volatile Acidity (Acidez Volátil)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Indica la cantidad de ácido acético en el vino. Valores más altos pueden dar
+							lugar a un sabor desagradable.
+						</li>
+						<li>
+							Citric Acid (Ácido Cítrico)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Representa la cantidad de ácido cítrico en el vino. Contribuye a la frescura y
+							acidez
+							del vino.
+						</li>
+						<li>
+							Residual Sugar (Azúcar Residual)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Indica la cantidad de azúcar que queda después de la fermentación. Afecta el
+							sabor y la
+							dulzura del vino.
+						</li>
+						<li>
+							Chlorides (Cloruros)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Representa la cantidad de cloruros en el vino. Pueden contribuir al sabor y la
+							calidad
+							del vino.
+						</li>
+						<li>
+							Free Sulfur Dioxide (Dióxido de Azufre Libre)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Indica la cantidad de dióxido de azufre libre en el vino. Actúa como
+							conservante y
+							antioxidante.
+						</li>
+						<li>
+							Total Sulfur Dioxide (Dióxido de Azufre Total)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Representa la cantidad total de dióxido de azufre en el vino. Es un indicador
+							de la
+							preservación del vino.
+						</li>
+						<li>
+							Density (Densidad)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Indica la densidad del vino. Puede estar relacionada con la concentración de
+							alcohol y
+							azúcar.
+						</li>
+						<li>
+							pH (Potencial de Hidrógeno)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Representa el nivel de acidez o alcalinidad del vino. Es una medida importante
+							para el
+							equilibrio del sabor.
+						</li>
+						<li>
+							Sulphates (Sulfatos)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Indica la cantidad de sulfatos en el vino. Pueden contribuir a la formación de
+							dióxido
+							de azufre y afectar el sabor.
+						</li>
+						<li>
+							Alcohol
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Representa el contenido de alcohol en el vino. Es un atributo importante para
+							el sabor
+							y la calidad del vino.
+						</li>
+						<li>
+							Quality (Calidad)
+							<br>
+							Tipo de Dato: Numérico (Discreto)
+							<br>
+							Descripción: Representa la calidad del vino en una escala que generalmente varía de 0 a 10 o
+							de
+							1 a 10. Este atributo puede ser un indicador importante de la percepción de calidad del
+							vino.
+						</li>
+						<li>
+							Row Number (Número de Fila)
+							<br>
+							Tipo de Dato: Numérico (Discreto)
+							<br>
+							Descripción: Este atributo indica el número de fila o entrada en el conjunto de datos. No
+							está
+							relacionado con las características del vino y se utiliza principalmente con fines de
+							identificación de filas.
+						</li>
+						<li>
+							Style (Estilo)
+							<br>
+							Tipo de Dato: Categórico (Nominal)
+							<br>
+							Descripción: El atributo "style" indica el estilo del vino, lo que puede referirse a si es
+							un
+							vino "rojo" o "blanco." Es el atributo objetivo que se busca predecir en este conjunto de
+							datos
+							y es fundamental para la clasificación de los vinos.
+
+						</li>
+					</ul>
+					</p>
+
+					<h3 class="major">Preparación de datos</h3>
+					<p>Lo primero a realizar es importar el conjunto de datos ya que este dataset es obtenido de la
+						página web Kaggle.
+						<br>Una vez importado el dataset, procedemos a observar los atributos, en este caso podemos ver
+						que no existen valores faltantes. Asi como también podemos ver que la mayoría de los atributos
+						presentan una distribución normal gaussiana.
+					</p>
+					</p>
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/wine1.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/wine2.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/wine3.png" alt="">
+					<p>
+						Como preparación de la data, se seteo el atributo Styke como label y no fue necesario realizar
+						ningún otro cambio.
+					</p>
+
+					<h3 class="major">Modelado</h3>
+					<p>
+						Para los modelos a considerar se utilizaron los algoritmos Naive Bayes y K-NN ya
+						que se trata de un problema de clasificación.
+					</p>
+					<p>
+						En cada cross validation de 10 folds y una seed igual en cada uno, se realizo el training del
+						algoritmo, se aplico el modelo y se realizo una prueba de performance.
+					</p>
+					<p>
+						Dentro de los procesos de feature selection se realizaron también cross validations.
+					</p>
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/wine4.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/wine5.png" alt="">
+
+					<h3 class="major">Resultados</h3>
+					<p>
+						En cuanto a los resultados, pudimos observar en las matrices de confusión que el algoritmo que
+						mejor se comporto fue el de Naive Bayes y luego el algoritmo de K-NN.
+					</p>
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/wine8.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/wine7.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/wine6.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/wine9.png" alt="">
+					<p>
+						Como se puede observar, los procesos de feature selection mejoraron en poca medida los
+						resultados de los
+						algoritmos en cuanto a la presición.
+					</p>
+
+					<h3 class="major">Conclusión</h3>
+					<p>
+						El conjunto de datos Wine es una herramienta valiosa en el campo del análisis y clasificación de
+						vinos. Al explorar este conjunto de datos, hemos identificado tres categorías principales de
+						vinos: vinos tintos, vinos blancos y vinos de calidad. Cada vino se describe a través de una
+						serie de atributos químicos y físicos que influyen en sus propiedades organolépticas.
+						<br>
+						Al analizar los atributos, hemos observado la diversidad química entre las categorías de vinos,
+						lo que respalda la necesidad de un enfoque de clasificación. Esta diversidad también resalta la
+						importancia de aplicar técnicas de Machine Learning para predecir y clasificar vinos en función
+						de sus características.
+						<br>
+						La aplicación de algoritmos de clasificación, como Naive Bayes, K-Nearest Neighbors y Regresión
+						Logística, puede ayudar a los enólogos y catadores a identificar y distinguir entre vinos en
+						función de sus atributos químicos, lo que facilita la toma de decisiones en la producción y
+						selección de vinos.
+						<br>
+						En resumen, el conjunto de datos Wine es un recurso esencial para comprender la química de los
+						vinos y desarrollar modelos predictivos para la clasificación de vinos. Esta herramienta
+						contribuye no solo al mundo del vino, sino también al campo más amplio del análisis de datos y
+						Machine Learning, demostrando cómo la tecnología puede mejorar nuestra comprensión y apreciación
+						de la enología.
+					</p>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../../assets/js/browser.min.js"></script>
+	<script src="../../assets/js/breakpoints.min.js"></script>
+	<script src="../../assets/js/util.js"></script>
+	<script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>

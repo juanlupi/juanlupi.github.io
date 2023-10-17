@@ -23,7 +23,7 @@
 
 		<!-- Header -->
 		<header id="header">
-			<h1><a href="../algoritmos.html">Casos de Estudios</a></h1>
+			<h1><a href="../casosDeEstudio.html">Casos de Estudios</a></h1>
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
@@ -55,12 +55,263 @@
 			<div class="wrapper">
 				<div class="inner">
 
-					<h3 class="major">¿Qué es Regresión Lineal?</h3>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					<h3 class="major">Información General</h3>
+					<p> El conjunto de datos del Titanic es uno de los conjuntos de datos más conocidos y utilizados en
+						el campo de Machine Learning y análisis de datos.
+						Proporciona información sobre los pasajeros a bordo del famoso barco Titanic, que sufrió un
+						trágico naufragio en su viaje inaugural en 1912.
+						<br>
+						Este conjunto de datos contiene una variedad de atributos que describen a los pasajeros, como su
+						edad, género, clase de boleto, número de hermanos y cónyuges a bordo,
+						número de padres e hijos a bordo, tarifa del boleto, entre otros. Además, incluye una variable
+						binaria que indica si un pasajero sobrevivió (1) o no (0).
+						<br>
+						El conjunto de datos del Titanic se utiliza comúnmente para la práctica y enseñanza de Machine
+						Learning, ya que ofrece la oportunidad de aplicar técnicas de
+						clasificación y regresión para predecir la supervivencia de los pasajeros en función de sus
+						características. Además, es un ejemplo interesante para explorar
+						la relación entre características como género, clase social y la probabilidad de sobrevivir al
+						desastre.
 					</p>
-				</div>
-			</div>
 
+					<h3 class="major">Objetivo</h3>
+					<p>El objetivo es predecir la supervivencia de los pasajeros del Titanic en función de sus
+						características personales y de viaje.
+						En particular, el conjunto de datos busca responder a la pregunta de quiénes tenían más
+						probabilidades de sobrevivir al trágico naufragio
+						del Titanic en 1912.</p>
+
+					<h3 class="major">Tipo de problema</h3>
+					<p>Se trata de un problema de clasificación supervisada. El objetivo es predecir si un pasajeros del
+						Titanic sobrevivió o no en función de sus características.</p>
+
+					<h3 class="major">Atributos</h3>
+					<p>Realizar un análisis de los atributos es de vital importancia por varias razones. En primer
+						lugar, permite comprender mejor la naturaleza de los datos y comprender a fondo la estructura y
+						el contenido de los mismos.
+						Esto incluye conocer la naturaleza de las variables, su distribución, relaciones entre atributos
+						y la presencia de valores atípicos o datos faltantes. Este conocimiento es esencial para tomar
+						decisiones informadas y
+						seleccionar las técnicas de análisis adecuadas.
+						<br>
+						En segundo lugar, es fundamental para identificar patrones y tendenncias que se puedan encontrar
+						en los datos. Esto puede revelar información valiosa que ayuda en la toma de decisiones y en la
+						generación de conocimientos.
+						<br>
+						Este análisis permite limpiar y preprocesar los datos, abordar valores atípicos, datos faltantes
+						y problemas de calidad de datos. La preparación adecuada de datos es esencial para el
+						rendimiento de los modelos de Machine Learning.
+						<br>
+						A través del análisis de datos, se pueden identificar los atributos más relevantes para el
+						problema. Esto simplifica los modelos, mejora su interpretación y puede aumentar su precisión.
+					</p>
+					<p>
+					<ul>
+						<li>
+							Passenger Class (Clase del Pasajero)
+							<br>Tipo de Dato: Categórico (Variable Ordinal)
+							<br>Descripción: Este atributo representa la clase de boleto que tenía el pasajero en el
+							Titanic. La clase se subdivide en tres categorías: primera clase (1), segunda clase (2) y
+							tercera clase (3). Es una variable ordinal, ya que existe un orden natural entre las clases.
+						</li>
+						<li>
+							Name (Nombre)
+							<br>
+							Tipo de Dato: Texto (Categórico)
+							<br>
+							Descripción: El nombre del pasajero en formato de texto. Aunque es categórico, suele
+							considerarse poco relevante para la predicción de la supervivencia y puede requerir un
+							procesamiento adicional para extraer información útil.
+						</li>
+						<li>
+							Sex (Género)
+							<br>
+							Tipo de Dato: Categórico (Binario)
+							<br>
+							Descripción: Indica el género del pasajero, que puede ser "male" (masculino) o "female"
+							(femenino). Es una variable binaria que puede influir significativamente en las tasas de
+							supervivencia.
+						</li>
+						<li>
+							Age (Edad)
+							<br>
+							Tipo de Dato: Numérico (Continuo)
+							<br>
+							Descripción: Representa la edad del pasajero en años. Es una variable continua y se espera
+							que sea relevante para la predicción de supervivencia, ya que se considera que la edad
+							influyó en las decisiones de evacuación.
+						</li>
+						<li>
+							SibSp (Número de Hermanos y Cónyuges)
+							<br>Tipo de Dato: Numérico (Discreto)
+							<br>Descripción: Indica el número de hermanos y cónyuges que viajaban con el pasajero en el
+							Titanic. Es una variable discreta que refleja la dinámica familiar a bordo.
+						</li>
+						<li>
+							Parch (Número de Padres e Hijos)
+							<br>Tipo de Dato: Numérico (Discreto)
+							<br>Descripción: Representa el número de padres e hijos que viajaban con el pasajero. Al
+							igual
+							que "SibSp," refleja la estructura familiar a bordo.
+						</li>
+						<li>
+							Ticket Number (Número de Boleto)
+							<br>Tipo de Dato: Texto (Categórico)
+							<br>Descripción: El número de boleto del pasajero en formato de texto. Aunque es categórico,
+							generalmente se considera menos relevante para la predicción de supervivencia.
+
+						</li>
+						<li>
+							Passenger Fare (Tarifa del Pasajero)
+							<br>Tipo de Dato: Numérico (Continuo)
+							<br>Descripción: Indica la tarifa pagada por el pasajero para su boleto. Puede estar
+							relacionado
+							con la clase del boleto y la posición socioeconómica.
+						</li>
+						<li>
+							Cabin (Cabina)
+							<br>Tipo de Dato: Texto (Categórico)
+							<br>Descripción: El número de cabina del pasajero en formato de texto. Esta variable es
+							categórica y puede requerir procesamiento adicional debido a la cantidad de datos faltantes.
+						</li>
+						<li>
+							Port of Embarkation (Puerto de Embarque)
+							<br>Tipo de Dato: Categórico (Variable Nominal)
+							<br>Descripción: Indica el puerto desde el cual el pasajero embarcó en el Titanic. Puede
+							tomar
+							los valores "C" (Cherburgo), "Q" (Queenstown) o "S" (Southampton). Es una variable nominal
+							que podría estar relacionada con el lugar de origen de los pasajeros.
+						</li>
+						<li>
+							Life Boat (Bote Salvavidas)
+							<br>Tipo de Dato: Categórico (Variable Nominal)
+							<br>Descripción: Esta variable podría indicar el número de bote salvavidas asignado al
+							pasajero,
+							si es que se le asignó uno. Es una variable nominal que puede estar relacionada con la
+							supervivencia.
+						</li>
+						<li>
+							Survived (Sobrevivió)
+							<br>Tipo de Dato: Categórico (Binario)
+							<br>Descripción: La variable objetivo que indica si el pasajero sobrevivió (1) o no
+							sobrevivió
+							(0) al naufragio del Titanic. Es una variable binaria que se utilizará para entrenar y
+							evaluar modelos de predicción de supervivencia.
+						</li>
+					</ul>
+					</p>
+
+					<h3 class="major">Preparación de datos</h3>
+					<p>Lo primero a realizar es obtener el conjunto de datos, que ya viene incluido en RapidMiner. Una
+						vez obtenidos pasamos a observar sus atributos,
+						detectar valores faltantes, posibles outliers, estadisticas de cada atributo, etc.</p>
+					</p>
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic1.png" alt="">
+					<p><strong>Missing Values</strong>
+						<br>Como podemos observar, tenemos valores faltantes tanto en la edad, en el precio del boleto,
+						la cabina, el puerto de embarcación y el bote salvavidas.
+						<br>
+						Para cada caso debemos analizar los atributos, la cantidad de valores faltante y la importancia
+						de los mismos para el problema.
+						Para la edad, se pueden reemplazar los valores faltantes por la media de la edad de los
+						pasajeros ya que estos son muy pocos en comparación con la cantidad de valores totales.
+						<br>
+						Para el precio del boleto, se puede quitar esta tupla ya que es un solo valor faltante, lo cual
+						no tendrá impacto en el modelo.
+						<br>
+						Para la cabina, quitaremos la columna entera, ya que los valores faltantes son demasiados y no
+						aportan información relevante para el problema,
+						ya que se puede inferir la cabina de un pasajero a partir de sus otras características como los
+						es la precio del boleto o la clase de pasajero.
+						<br>
+						Para el puerto de embarcación, tambien se puede quitar esta tupla ya que son solamente dos
+						valors faltantes.
+						<br>
+						Por último, para el bote salvavidas, se puede quitar esta columna ya que indica si un pasajero
+						se salvó o no, lo cual es lo mismo que el atributo objetivo Survived.
+					</p>
+
+					<h3 class="major">Modelado</h3>
+					<p>
+						Para los modelos a considerar se utilizaron los algoritmos Disicion Tree, Naive Bayes y K-NN ya
+						que se trata de un problema de clasificación.
+						<br>
+						Para aplicar estos modelos primero preparamos la data, para ello, se trato con los atributos
+						como mencionado anteriormente, se seteo el atributo Name como id y el atributo objetivo como
+						label.
+					</p>
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic2.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic3.png" alt="">
+					<p>
+						En cada cross validation de 10 folds y una seed igual en cada uno, se realizo el training del
+						algoritmo, se aplico el modelo y se realizo una prueba de performance.
+					</p>
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic4.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic10.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic5.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic6.png" alt="">
+
+					<h3 class="major">Resultados</h3>
+					<p>
+						En cuanto a los resultados, pudimos observar en las matrices de confusión que el algoritmo que
+						mejor se comporto fue el de Decision Tree, con un accuracy de 80&, seguido por el algoritmo de
+						Naive Bayes con un accuracy de 77% y por último el algoritmo de K-NN con un accuracy de 69%.
+					</p>
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic7.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic8.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic9.png" alt="">
+
+					<h3 class="major">Conclusión</h3>
+					<p>
+						En conclusión, el análisis del conjunto de datos del Titanic revela información valiosa sobre
+						los factores que influyeron en la supervivencia de los pasajeros a bordo del famoso barco. A
+						través de la exploración de atributos como género, edad, clase de boleto y otros, hemos
+						identificado patrones significativos que arrojan luz sobre la tragedia del Titanic.
+						<br>
+						Este análisis demuestra la importancia del género como un factor crítico en la probabilidad de
+						supervivencia, con un sesgo evidente hacia la priorización de mujeres y niños. Además, la clase
+						de boleto se destaca como otro indicador clave de la probabilidad de supervivencia, mostrando
+						una clara correlación entre la posición socioeconómica y las tasas de supervivencia.
+						<br>
+						La edad también juega un papel importante, especialmente para los pasajeros más jóvenes y
+						mayores, lo que sugiere que las decisiones de evacuación podrían haber estado influenciadas por
+						la edad. Estos hallazgos son fundamentales para comprender las dinámicas sociales y de toma de
+						decisiones en situaciones de crisis.
+						<br>
+						En última instancia, este análisis del conjunto de datos del Titanic ilustra cómo el análisis de
+						datos puede proporcionar información valiosa y generar conocimientos que contribuyen a nuestra
+						comprensión de eventos históricos y a la toma de decisiones informadas en diversas áreas, desde
+						la ingeniería naval hasta la ciencia de datos.
+					</p>
+
+					<h3 class="major">Trabajando en Python</h3>
+					<p>
+						Análisis profundo de los datos del Titanic con Python, aplicación de algoritmos y visualización
+						de los resultados.
+						<br>
+						<a href="https://colab.research.google.com/drive/10SfY9HE56lYNH6lxPq8cRTxgsQXeL_UJ?usp=sharing">Link
+							a Google Collab</a>
+
+					</p>
+					<p>
+						Calculando algunas probabilidades condicionales:
+					</p>
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic11.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic12.png" alt="">
+					<img style="display: block; margin-bottom: 3%; margin-left: auto; margin-right: auto; width:100% ;"
+						src="../../images/titanic13.png" alt="">
 		</section>
 
 	</div>
